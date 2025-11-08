@@ -1,0 +1,303 @@
+
+/* === HERO / CONTENIDO PRINCIPAL === */
+main {
+  margin-top: 30px;
+  padding-top: 200px; /* espacio arriba para el contenido */
+  background: url("img/Gradiente-Hero.png") no-repeat top;
+  background-size: 55% 40%; 
+  min-height: 90vh;
+}
+
+/* Subtítulo encima del h1 */
+.badge {
+  display: inline-block;
+  background: rgba(59, 59, 59, 0.1);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 12px;  
+  margin-bottom: 1px;
+  color: #fff;
+}
+
+h1 {
+  font-family: "Inter Tight", Sans-serif;
+  padding-top:10px;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.texto-gradiante
+ {
+    background: linear-gradient(45deg, #C8D2F6, #517BD4);
+    background: -webkit-linear-gradient(45deg, #C8D2F6, #517BD4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-family: "Inter Tight", Sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  
+}
+
+
+/* Estilo general de la sección */
+.seccion-marcas {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px
+}
+
+/* Título */
+.titulo-marcas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+.icono-flecha {
+  margin-right: 8px; /* espacio entre icono y texto */
+}
+
+/* Lista de logos */
+.seccion-marcas {
+  text-align: center;
+  padding: 40px 20px;
+  background: #000; /* fondo negro opcional */
+  color: #fff;
+}
+
+.titulo-marcas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.icono-flecha {
+  width: 24px;
+  height: auto;
+}
+
+
+/* Sección */
+.seccion-servicios {
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+  background: black; /* fondo oscuro como en tu imagen */
+}
+
+.seccion-servicios h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* Contenedor de tarjetas */
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* para que no se corte en pantallas chicas */
+}
+
+/* Cada tarjeta */
+.tarjeta {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  width: 280px;
+  border-radius: 10px;
+  text-align: left;
+  position: relative;
+}
+
+/* Barra de color arriba */
+.barra {
+  width: 40px;
+  height: 8px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+/* Colores */
+.azul { background: #005DFF; }
+.celeste { background: #00E0FF; }
+.roja { background: #FF3B3B; }
+
+/* Títulos de las tarjetas */
+.tarjeta h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Etiqueta pequeña */
+.tarjeta .etiqueta {
+  display: inline-block;
+  background: #222;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+/* Texto */
+.tarjeta p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+/* Enlace */
+.tarjeta a {
+  color: white;
+  text-decoration: underline;
+  font-size: 0.85rem;
+}
+/* SECCIÓN CONTACTO */
+.contacto-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contacto-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+/* INFO DE CONTACTO */
+.contacto-info h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.contacto-persona {
+  display: flex;
+  gap: 20px;
+}
+
+.contacto-foto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.contacto-datos h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.contacto-datos p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* FORMULARIO */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.required {
+  color: red;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'Inter Tight', sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 14px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background: #357abd;
+}
+
+.btn-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* MENSAJES */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  display: none;
+}
+
+.form-group.error .error-message {
+  display: block;
+}
+
+.form-group.error input,
+.form-group.error textarea,
+.form-group.error select {
+  border-color: red;
+}
+
+.success-message {
+  background: #d4edda;
+  color: #155724;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.success-message.show {
+  display: block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contacto-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .contacto-info h2 {
+    font-size: 28px;
+  }
+}

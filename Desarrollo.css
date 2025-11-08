@@ -1,0 +1,105 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000000; /* Fondo negro */
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+}
+
+/* === NAV === */
+nav {
+    display: flex;
+    justify-content: space-between; /* separa logo y links */
+    align-items: center;
+    background:rgba(116, 115, 115, 0.089);
+    position: fixed;
+    top: 20px;
+    left: 70px;
+    right: 70px;
+    box-shadow: 0 4px 30px rgba(155, 154, 154, 0.158);
+    backdrop-filter: blur(16.6px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 8px; 
+    padding: 20px;
+}
+
+.logo img{
+   height: 30px;
+   width: auto;
+   display: block;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #4da3ff;
+}
+
+nav button {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+nav button:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* === HERO / CONTENIDO PRINCIPAL === */
+main {
+  padding-top: 200px; /* espacio arriba para el contenido */
+  background: url("img/Gradiente-Hero.png") no-repeat top;
+  background-size: 70% 40%; 
+  min-height: 90vh;
+}
+
+
+h1 {
+  font-family: "Inter Tight", Sans-serif;
+  padding-top:10px;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.texto-gradiante
+ {
+    background: linear-gradient(45deg, #C8D2F6, #517BD4);
+    background: -webkit-linear-gradient(45deg, #C8D2F6, #517BD4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-family: "Inter Tight", Sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  
+}
+

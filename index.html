@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto web</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <span class="logo"><img src="img/Logos.png" alt="HitOcean"></span>
+    <div class="nav-links">
+      <a href="Servicio-desarrollo.html">Servicios</a>
+      <a href="#casos">Casos de éxito</a>
+      <a href="#blog">Blog</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#idioma">Idioma</a>
+      <button type="button" id="btnContactoNav">Contacto</button>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <p class="badge">Build software powered by AI</p>
+    <h1>Somos personas
+      <br>
+      <span class="texto-gradiante">expertas en tecnología</span>
+    </h1>
+    <p>
+      Desarrollamos productos, escalamos equipos y mantenemos 
+      <br> 
+      tus aplicaciones con Tecnología y Talento de Alto Nivel.
+    </p>
+    <button class="btn-hablemos" type="button">Hablemos hoy</button>
+  </main>
+
+  <!-- SECCIÓN MARCAS -->
+  <section id="marcas" class="seccion-marcas">
+    <header class="titulo-marcas">
+      <img src="img/flecha-de-tag.svg" alt="Flecha" class="icono-flecha">
+      <h2>Nos eligieron para impulsar su crecimiento</h2>
+    </header>
+
+    <div class="slider">
+      <div class="slider-track">
+        <img src="img/dell.svg" alt="Dell">
+        <img src="img/Fiat.svg" alt="Fiat">
+        <img src="img/Adidas.svg" alt="Adidas">
+        <img src="img/Stanley.svg" alt="Stanley">
+        <img src="img/Mercadolibre.svg" alt="Mercado Libre">
+
+        <!-- Repetidos para el loop infinito -->
+        <img src="img/dell.svg" alt="Dell">
+        <img src="img/Fiat.svg" alt="Fiat">
+        <img src="img/Adidas.svg" alt="Adidas">
+        <img src="img/Stanley.svg" alt="Stanley">
+        <img src="img/Mercadolibre.svg" alt="Mercado Libre">
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN SERVICIOS -->
+  <section class="seccion-servicios">
+    <h2>En HitOcean creemos<br>en el potencial de las ideas</h2>
+
+    <div class="tarjetas">
+      <article class="tarjeta">
+        <div class="barra azul"></div>
+        <h3>Software</h3>
+        <span class="etiqueta">CORE DE HITOCEAN</span>
+        <p>Soluciones digitales a medida para escalar tu negocio.</p>
+        <a href="#software">Ver más</a>
+      </article>
+
+      <article class="tarjeta">
+        <div class="barra celeste"></div>
+        <h3>HitAI</h3>
+        <span class="etiqueta">INTELIGENCIA ARTIFICIAL</span>
+        <p>Automatización, análisis avanzado y plataformas personalizadas.</p>
+        <a href="#hitai">Ver más</a>
+      </article>
+
+      <article class="tarjeta">
+        <div class="barra roja"></div>
+        <h3>HitSecurity</h3>
+        <span class="etiqueta">CIBERSEGURIDAD</span>
+        <p>Protección integral, cumplimiento y cultura de ciberseguridad.</p>
+        <a href="#hitsecurity">Ver más</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- SECCIÓN CONTACTO -->
+  <section id="contacto" class="contacto-section">
+    <div class="contacto-container">
+      <div class="contacto-info">
+        <h2>Queremos conocer tus ideas</h2>
+        
+        <div class="contacto-persona">
+          <img src="img/josefina.jpg" alt="Josefina Cavanagh" class="contacto-foto">
+          <div class="contacto-datos">
+            <h3>Josefina Cavanagh</h3>
+            <p class="cargo">Partnership Manager</p>
+            <p class="telefono">+34 672 110 699</p>
+            <p class="email">josefina@hitocean.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contacto-form">
+        <form id="formularioContacto">
+          <div class="form-group">
+            <label for="nombre">Nombre <span class="required">*</span></label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+
+          <div class="form-group">
+            <label for="empresa">Empresa <span class="required">*</span></label>
+            <input type="text" id="empresa" name="empresa" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono">
+          </div>
+
+          <div class="form-group">
+            <label for="idea">¿Cuál es tu idea o proyecto? <span class="required">*</span></label>
+            <textarea id="idea" name="idea" rows="4" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="conociste">¿Cómo nos conociste? <span class="required">*</span></label>
+            <select id="conociste" name="conociste" required>
+              <option value="">Selecciona una opción</option>
+              <option value="redes-sociales">Redes sociales</option>
+              <option value="google">Google</option>
+              <option value="recomendacion">Recomendación</option>
+              <option value="evento">Evento</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn-submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 HitOcean. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="formulario.js"></script>
+</body>
+</html>
