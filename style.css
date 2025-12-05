@@ -1,14 +1,5 @@
 
-/* === HERO / CONTENIDO PRINCIPAL === */
-main {
-  margin-top: 30px;
-  padding-top: 200px; /* espacio arriba para el contenido */
-  background: url("img/Gradiente-Hero.png") no-repeat top;
-  background-size: 55% 40%; 
-  min-height: 90vh;
-}
 
-/* Subtítulo encima del h1 */
 .badge {
   display: inline-block;
   background: rgba(59, 59, 59, 0.1);
